@@ -13,9 +13,9 @@ from google import genai  # type: ignore
 from google.genai import types as genai_types  # type: ignore
 from inputimeout import TimeoutOccurred, inputimeout
 
-from easyapply.exceptions import ApplicationFailed, SkipApplication, Terminate
-from easyapply.models import AnswerManyOutput, ChooseResumeOutput
-from easyapply.qna.prompter import Prompter
+from vibeapply.exceptions import ApplicationFailed, SkipApplication, Terminate
+from vibeapply.models import AnswerManyOutput, ChooseResumeOutput
+from vibeapply.qna.prompter import Prompter
 
 from .base import AnswerStrategy
 

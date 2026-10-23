@@ -17,9 +17,9 @@ from selenium.webdriver.remote.webelement import WebElement
 from seleniumbase import BaseCase
 from seleniumbase.common.exceptions import NoSuchElementException
 
-from easyapply.exceptions import (ApplicationFailed, ReachedLimit,
+from vibeapply.exceptions import (ApplicationFailed, ReachedLimit,
                                   SkipApplication, Terminate)
-from easyapply.qna.prompter import Prompter
+from vibeapply.qna.prompter import Prompter
 
 from .models import Behavior, Config, ExperienceLevel, SearchCriteria
 from .qna.base import AnswerStrategy

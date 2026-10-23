@@ -1,4 +1,4 @@
-"""EasyApply modular package."""
+"""VibeApply modular package."""
 
 __all__ = [
     "models",

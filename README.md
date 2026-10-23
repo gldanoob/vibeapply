@@ -1,4 +1,4 @@
-# EasyApply Bot
+# VibeApply Bot
 
 Automates applying to LinkedIn Easy Apply jobs using Selenium. Configure your search and account settings once, then let it run with human-like pacing and simple auto-answers.
 
@@ -63,7 +63,7 @@ Output CSV is controlled by `output_filename` and is appended to after each atte
 
 ## Notes on LLM-based answers
 
-You can plug a custom answer strategy by implementing the `AnswerStrategy` Protocol (see `easyapply/qna/base.py`). Then pass your implementation instead of `SimpleAnswerStrategy` in `main.py`. Keep secrets (API keys) in environment variables or a `.env` file.
+You can plug a custom answer strategy by implementing the `AnswerStrategy` Protocol (see `vibeapply/qna/base.py`). Then pass your implementation instead of `SimpleAnswerStrategy` in `main.py`. Keep secrets (API keys) in environment variables or a `.env` file.
 
 ### Resume / context ingestion
 
@@ -74,11 +74,9 @@ In `config.yaml` you can point `context_file` or adapt initialization code to pa
 ## Troubleshooting
 
 - If ChromeDriver download fails, ensure internet access and that Chrome is installed.
-- If LinkedIn changes its UI, some selectors may need updates in `easyapplybot.py`.
+- If LinkedIn changes its UI, some selectors may need updates in `vibeapply/selectors.py`.
 - Avoid running at inhuman speeds; keep delays and active-hours to reduce risk.
 
 ## Legal and ethical
 
 Using automation may violate site terms. You are responsible for how you use this tool. Prefer transparency and consent, and avoid abusing platforms.
-
-# vibeapply

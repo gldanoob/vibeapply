@@ -6,12 +6,12 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from easyapply.config import load_config
-from easyapply.linkedin import ApplyClient
-from easyapply.logging_setup import setup_logger
-from easyapply.qna.gemini import GeminiAnswerStrategy
-from easyapply.qna.prompter import DiscordPrompt
-from easyapply.webdriver_setup import build_chrome
+from vibeapply.config import load_config
+from vibeapply.linkedin import ApplyClient
+from vibeapply.logging_setup import setup_logger
+from vibeapply.qna.gemini import GeminiAnswerStrategy
+from vibeapply.qna.prompter import DiscordPrompt
+from vibeapply.webdriver_setup import build_chrome
 
 load_dotenv()
 
@@ -22,7 +22,7 @@ def write_example_config(dest: Path) -> None:
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="LinkedIn Easy Apply Bot")
+    parser = argparse.ArgumentParser(description="VibeApply: LinkedIn Easy Apply Bot")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     p_init = sub.add_parser("init", help="Create config.yaml from example")
@@ -53,8 +53,8 @@ def main(argv=None):
             print(f"Config file not found: {cfg_path}")
             return 1
         cfg = load_config(cfg_path)
-        logger = setup_logger("easyapply")
-        logger.info("EasyApply run starting")
+        logger = setup_logger("vibeapply")
+        logger.info("VibeApply run starting")
         logger.info("Loaded config")
         context = build_chrome(headless=args.headless)
         with context as driver:
