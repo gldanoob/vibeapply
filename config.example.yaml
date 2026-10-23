@@ -1,0 +1,44 @@
+test: true
+# Copy to config.yaml and fill in your details
+username: "you@example.com"
+password: "YOUR_LINKEDIN_PASSWORD"
+phone_number: "YOUR_PHONE_NUMBER"
+
+# Application preferences
+positions:
+  - "Software Engineer"
+  - "Backend Developer"
+locations:
+  - "San Francisco, CA"
+  - "Remote"
+
+# Filters
+experience_level: [1, 2]  # 1 Entry, 2 Associate, 3 Mid-Senior, 4 Director, 5 Executive, 6 Internship
+time_posted: "day"        # one of: hour, day, week, month
+
+# Behavior
+output_filename: "output.csv"
+daily_limit: 50
+min_delay: 1.5
+max_delay: 3.0
+active_hours: [9, 24]      # 24-hour clock, start inclusive, end exclusive
+headless: false             # set true to run Chrome headless
+
+# Auto-answer helpers
+salary: "40000"
+rate: "60"
+
+# Files to upload (absolute paths recommended)
+uploads:
+  Resume: 
+    - "cv_web.pdf"
+    - "cv_ai.pdf"
+
+# Optional filters
+blacklist: []
+blackListTitles: ["senior", "principal"]
+
+context_files:
+  - "context.txt"
+  - "cv_ai.pdf"
+  - "cv_web.pdf"

@@ -1,0 +1,14 @@
+seleniumbase
+beautifulsoup4
+pandas
+pyautogui
+PyYAML
+lxml
+future
+bs4
+python-dotenv
+packaging
+webdriver-manager
+google-genai
+discord.py
+inputimeout

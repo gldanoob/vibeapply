@@ -1,0 +1,42 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+tmp/
+logs/
+firefox_profile/
+downloaded_files
+firefox_profile
+logs
+tmp
+user_data
+
+config.yaml
+output.csv
+qa-test.csv
+qna.csv
+context.txt
+config.yaml
+.env
+skipped_jobs.txt
+gemini_output.log
+*.log
+*.deb
+
+# Personal documents and credentials
+cv*.pdf
+resume*.pdf
+profile.*
+personal/
+.env.*
+.aws/

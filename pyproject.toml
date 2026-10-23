@@ -1,0 +1,24 @@
+[project]
+name = "easyapply"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "bs4>=0.0.2",
+    "discord-py>=2.6.4",
+    "future>=1.0.0",
+    "google-genai>=1.50.1",
+    "inputimeout>=1.0.4",
+    "lxml>=6.0.2",
+    "packaging>=25.0",
+    "pandas>=2.3.3",
+    "pyautogui>=0.9.54",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.2.1",
+    "pyyaml>=6.0.3",
+    "selenium>=4.38.0",
+    "seleniumbase>=4.44.12",
+    "webdriver-manager>=4.0.1",
+]
